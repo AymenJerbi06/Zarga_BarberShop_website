@@ -6,7 +6,7 @@ import cherifPortrait from "../../../cherif_barber.jpg";
 import guidaraPortrait from "../../../guidara.jpg";
 
 const portraits: Record<string, StaticImageData | string> = {
-  zarga: "/images/profile.jpg",
+  zarga: "/images/zarga1.png",
   cherif: cherifPortrait,
   guidara: guidaraPortrait,
 };
@@ -46,7 +46,9 @@ export default function TeamPage() {
                   alt={barber.name}
                   width={800}
                   height={960}
-                  className="h-[420px] w-full object-cover"
+                  className={`h-[420px] w-full object-cover ${
+                    barber.id === "zarga" ? "object-[center_top]" : ""
+                  }`}
                 />
                 <div className="p-8">
                   <p className="section-label mb-3">{barber.title}</p>

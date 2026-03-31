@@ -128,7 +128,7 @@ export const BARBERS: Barber[] = [
     specialties: ["Fades & Dégradés", "Styles Modernes", "Transformations"],
     phone: "+216 22681287",
     bio: "Avec plus de 15 ans d'expérience, Zarga a fondé ce salon avec une vision : offrir à chaque client l'excellence du barbier traditionnel avec les techniques modernes les plus pointues. Maître dans l'art du dégradé, il a formé une équipe d'élite.",
-    image: "/images/profile.jpg",
+    image: "/images/zarga1.png",
   },
   {
     id: "cherif",

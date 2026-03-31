@@ -28,7 +28,7 @@ const socialLinks = [
 ];
 
 const portraits: Record<string, StaticImageData | string> = {
-  zarga: "/images/profile.jpg",
+  zarga: "/images/zarga1.png",
   cherif: cherifPortrait,
   guidara: guidaraPortrait,
 };
@@ -55,7 +55,9 @@ export default function TeamPreview() {
                   alt={barber.name}
                   width={600}
                   height={680}
-                  className="h-[340px] w-full object-cover"
+                  className={`h-[340px] w-full object-cover ${
+                    barber.id === "zarga" ? "object-[center_top]" : ""
+                  }`}
                 />
               </div>
               <h3 className="mt-6 font-display text-3xl text-[#111111]">{barber.name}</h3>
