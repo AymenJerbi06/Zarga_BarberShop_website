@@ -56,15 +56,15 @@ export default function TeamPage() {
                   <p className="mt-4 body-copy">{barber.bio}</p>
                   <p className="mt-5 text-sm text-[#7b7b7b]">{barber.specialties.join(" · ")}</p>
                   <div className="mt-8 flex flex-wrap gap-4">
-                    <Link href={`/book?barber=${barber.id}`} className="btn-primary">
-                      Réserver
-                    </Link>
                     <a
                       href={`tel:${barber.phone.replace(/\s/g, "")}`}
-                      className="btn-link text-[#111111]"
+                      className="btn-primary"
                     >
-                      {barber.phone}
+                      Appeler {barber.name}
                     </a>
+                    <span className="btn-link text-[#7b7b7b] flex items-center">
+                      {barber.phone}
+                    </span>
                   </div>
                 </div>
               </article>

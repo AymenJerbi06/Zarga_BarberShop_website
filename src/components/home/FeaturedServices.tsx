@@ -40,8 +40,8 @@ export default function FeaturedServices() {
                 </span>
               </div>
               <p className="mt-4 body-copy text-base">{service.description}</p>
-              <Link href={`/book?service=${service.id}`} className="btn-primary mt-8">
-                Réserver
+              <Link href="/book" className="btn-primary mt-8">
+                Réserver par téléphone
               </Link>
             </article>
           ))}

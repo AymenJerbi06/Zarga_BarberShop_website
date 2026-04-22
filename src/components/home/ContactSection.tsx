@@ -44,7 +44,7 @@ export default function ContactSection() {
                 href="/book"
                 className="inline-flex min-h-[50px] items-center justify-center rounded-full border border-white/60 px-6 text-[11px] font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:bg-white hover:text-[#111111]"
               >
-                Réserver
+                Réserver par téléphone
               </Link>
             </div>
           </div>

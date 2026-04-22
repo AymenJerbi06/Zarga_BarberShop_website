@@ -64,7 +64,19 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden md:flex">
+          <div className="hidden md:flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/aymen_jerbi6/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-[9px] font-semibold uppercase tracking-[0.2em] border px-3 py-1.5 transition-colors ${
+                isHomeHero
+                  ? "border-white/50 text-white hover:border-white"
+                  : "border-[#111111]/40 text-[#111111] hover:border-[#111111]"
+              }`}
+            >
+              Design · Aymen ↗
+            </a>
             <Link
               href="/book"
               className={`inline-flex min-h-[46px] items-center justify-center rounded-full border px-5 text-[10px] font-semibold uppercase tracking-[0.18em] transition-colors ${
@@ -73,7 +85,7 @@ export default function Navbar() {
                   : "border-[#111111] text-[#111111] hover:bg-[#111111] hover:text-white"
               }`}
             >
-              Reserver en ligne
+              Réserver
             </Link>
           </div>
 
@@ -119,8 +131,16 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/book" className="btn-primary w-fit" onClick={() => setOpen(false)}>
-            Reserver en ligne
+            Réserver
           </Link>
+          <a
+            href="https://www.instagram.com/aymen_jerbi6/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[9px] uppercase tracking-[0.2em] font-semibold text-[#111111]/60 hover:text-[#111111] transition-colors"
+          >
+            Design · Aymen ↗
+          </a>
         </div>
       </div>
     </header>

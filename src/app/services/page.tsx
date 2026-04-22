@@ -65,7 +65,7 @@ export default function ServicesPage() {
                           <span className="text-xl font-semibold text-[#111111]">
                             {formatPrice(service.price, service.priceFrom)}
                           </span>
-                          <Link href={`/book?service=${service.id}`} className="btn-primary">
+                          <Link href="/book" className="btn-primary">
                             Réserver
                           </Link>
                         </div>
@@ -79,7 +79,7 @@ export default function ServicesPage() {
 
           <div className="mt-12 text-center">
             <Link href="/book" className="btn-primary">
-              Réserver un rendez-vous
+              Réserver par téléphone
             </Link>
           </div>
         </div>
