@@ -88,6 +88,19 @@ export default function Navbar() {
             </Link>
           </div>
 
+          {/* Credit — always visible on mobile */}
+          <p className={`md:hidden text-[10px] transition-colors ${isHomeHero ? "text-white/70" : "text-[#7b7b7b]"}`}>
+            Created and designed by{" "}
+            <a
+              href="https://www.instagram.com/aymen_jerbi6/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`underline transition-colors ${isHomeHero ? "hover:text-white" : "hover:text-[#111111]"}`}
+            >
+              Aymen
+            </a>
+          </p>
+
           <button
             type="button"
             aria-label="Menu"
@@ -132,17 +145,6 @@ export default function Navbar() {
           <Link href="/book" className="btn-primary w-fit" onClick={() => setOpen(false)}>
             Réserver
           </Link>
-          <p className="text-xs text-[#7b7b7b]">
-            Created and designed by{" "}
-            <a
-              href="https://www.instagram.com/aymen_jerbi6/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-[#111111] transition-colors"
-            >
-              Aymen
-            </a>
-          </p>
         </div>
       </div>
     </header>
