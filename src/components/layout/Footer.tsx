@@ -87,7 +87,7 @@ export default function Footer() {
         <p className="mt-3 text-sm text-white/40">
           Created and designed by{" "}
           <a
-            href="https://www.instagram.com/aymen_jerbi6/"
+            href="https://www.aymen.info/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline transition-colors hover:text-white"

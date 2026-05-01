@@ -68,7 +68,7 @@ export default function Navbar() {
             <p className={`text-xs transition-colors ${isHomeHero ? "text-white/70" : "text-[#7b7b7b]"}`}>
               Created and designed by{" "}
               <a
-                href="https://www.instagram.com/aymen_jerbi6/"
+                href="https://www.aymen.info/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`underline transition-colors ${isHomeHero ? "hover:text-white" : "hover:text-[#111111]"}`}
@@ -92,7 +92,7 @@ export default function Navbar() {
           <p className={`md:hidden text-[10px] transition-colors ${isHomeHero ? "text-white/70" : "text-[#7b7b7b]"}`}>
             Created and designed by{" "}
             <a
-              href="https://www.instagram.com/aymen_jerbi6/"
+              href="https://www.aymen.info/"
               target="_blank"
               rel="noopener noreferrer"
               className={`underline transition-colors ${isHomeHero ? "hover:text-white" : "hover:text-[#111111]"}`}
